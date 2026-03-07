@@ -1,17 +1,17 @@
 class Diffswarm < Formula
   desc "Paid BYOK CLI for PR reviews"
   homepage "https://diffswarm.com"
-  version "2.0.10"
+  version "2.0.11"
   license "Proprietary"
 
   on_macos do
-    url "https://github.com/bro4all/homebrew-diffswarm/releases/download/v2.0.10/diffswarm-v2.0.10-darwin-arm64.tar.gz"
-    sha256 "2ee6d0d582bc170c79aac14cc4d8e69ed9689968790b58778898987eb1dc32c0"
+    url "https://github.com/bro4all/homebrew-diffswarm/releases/download/v2.0.11/diffswarm-v2.0.11-darwin-arm64.tar.gz"
+    sha256 "96e99ba7ae41f5d715682834a1e0e2e8b58fa9dc390da702b0ff536e0a2f1ead"
   end
 
   on_linux do
-    url "https://github.com/bro4all/homebrew-diffswarm/releases/download/v2.0.10/diffswarm-v2.0.10-linux-x86_64.tar.gz"
-    sha256 "61be2810a64d8cd3c1c63fc89a4b9a512a1f513998a7b73baca2a61fd2fa79d5"
+    url "https://github.com/bro4all/homebrew-diffswarm/releases/download/v2.0.11/diffswarm-v2.0.11-linux-x86_64.tar.gz"
+    sha256 "bfd4396e8b5a8995ddd2917b55b50aa34ce1c2d769d077efb66851b5bf0cde52"
   end
 
   def install

@@ -3,6 +3,7 @@ class Diffswarm < Formula
   homepage "https://diffswarm.com"
   version "2.4.0"
   license "Proprietary"
+  revision 1
   depends_on "bun"
 
   on_macos do
@@ -18,6 +19,9 @@ class Diffswarm < Formula
   def install
     libexec.install Dir["libexec/*"]
     bin.install "bin/diffswarm"
+
+    wrapper_root = 'INSTALL_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"'
+    inreplace bin/"diffswarm", wrapper_root, "INSTALL_ROOT=\"#{prefix}\""
   end
 
   test do

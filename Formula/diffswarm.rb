@@ -1,27 +1,23 @@
 class Diffswarm < Formula
   desc "Repo-first BYOK PR review console"
   homepage "https://diffswarm.com"
-  version "2.4.0"
+  version "2.4.1"
   license "Proprietary"
-  revision 1
   depends_on "bun"
 
   on_macos do
-    url "https://github.com/bro4all/homebrew-diffswarm/releases/download/v2.4.0/diffswarm-v2.4.0-darwin-arm64.tar.gz"
-    sha256 "9369cfbbb6f35e4f1c5cb3f82594881c8b82e8bc432546fa3cbb1686145fef14"
+    url "https://github.com/bro4all/homebrew-diffswarm/releases/download/v2.4.1/diffswarm-v2.4.1-darwin-arm64.tar.gz"
+    sha256 "c318d43ded81130a7beac923de0eb83240cf696104df8835273978aaa1abf88b"
   end
 
   on_linux do
-    url "https://github.com/bro4all/homebrew-diffswarm/releases/download/v2.4.0/diffswarm-v2.4.0-linux-x86_64.tar.gz"
-    sha256 "48f485e7de5c8348d595cd59f1e66856a4e2ff344b0ceaf50a989ed0287e95a8"
+    url "https://github.com/bro4all/homebrew-diffswarm/releases/download/v2.4.1/diffswarm-v2.4.1-linux-x86_64.tar.gz"
+    sha256 "86c89ea5ea6b616f4f9277ced8ca642f772b7dde9f6b2739a3aa3b6facc13a97"
   end
 
   def install
     libexec.install Dir["libexec/*"]
     bin.install "bin/diffswarm"
-
-    wrapper_root = 'INSTALL_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"'
-    inreplace bin/"diffswarm", wrapper_root, "INSTALL_ROOT=\"#{prefix}\""
   end
 
   test do

@@ -1,18 +1,18 @@
 class Diffswarm < Formula
   desc "Repo-first BYOK PR review console"
   homepage "https://diffswarm.com"
-  version "2.4.1"
+  version "2.5.0"
   license "Proprietary"
   depends_on "bun"
 
   on_macos do
-    url "https://github.com/bro4all/homebrew-diffswarm/releases/download/v2.4.1/diffswarm-v2.4.1-darwin-arm64.tar.gz"
-    sha256 "c318d43ded81130a7beac923de0eb83240cf696104df8835273978aaa1abf88b"
+    url "https://github.com/bro4all/homebrew-diffswarm/releases/download/v2.5.0/diffswarm-v2.5.0-darwin-arm64.tar.gz"
+    sha256 "3a0dc1b5f2bf279e3e93781e68ba2a91387b20b1859196d80242cbdaa23368d9"
   end
 
   on_linux do
-    url "https://github.com/bro4all/homebrew-diffswarm/releases/download/v2.4.1/diffswarm-v2.4.1-linux-x86_64.tar.gz"
-    sha256 "86c89ea5ea6b616f4f9277ced8ca642f772b7dde9f6b2739a3aa3b6facc13a97"
+    url "https://github.com/bro4all/homebrew-diffswarm/releases/download/v2.5.0/diffswarm-v2.5.0-linux-x86_64.tar.gz"
+    sha256 "ea9f274be9f21ace9e2b22ee68426052f61894846beef88512821c6ce085e6c3"
   end
 
   def install
